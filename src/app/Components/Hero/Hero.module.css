@@ -1,0 +1,32 @@
+.img {
+    max-width: 100%;
+    width: 50%;
+    padding: 1rem;
+}
+
+.heroDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: slideUp 0.5s ease-out;
+}
+
+.title {
+    color: blue;
+    font-family: Calibri, sans-serif;
+    font-size: 3rem;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,26 @@
+.navbar {
+    background-image: url("https://e0.pxfuel.com/wallpapers/571/385/desktop-wallpaper-blue-abstract-atmosphere-background-banner-business-enterprises-abstract-background-banner-blue-abstract.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem 0rem 1.5rem 1rem;
+}
+
+.navbarList {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbarItem {
+    list-style-type: none;
+}
+
+.navbarLink {
+    color: rgb(10, 10, 75);
+    transition: 0.3s;
+}
+
+.navbarLink:hover,
+.navbarLink:focus {
+    color: rgb(81, 81, 253);
+    transition: 0.3s;
+}
