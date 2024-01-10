@@ -1,0 +1,17 @@
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 12%;
+    margin: auto;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.counter-btn {
+    background-color: #7099FF;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
