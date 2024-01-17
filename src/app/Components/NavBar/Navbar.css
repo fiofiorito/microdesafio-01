@@ -1,0 +1,64 @@
+/* color: #fff; */
+/* color: #001D66; */
+
+nav {
+    /* FIX POSITION STICKY LATER */
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: #7099ff;
+    /* box-shadow: 0px 2px 4px #abc4ff; */
+}
+
+.navbar-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+
+.navbar-item {
+    padding: 0.5rem 2rem;
+    margin-left: 2rem;
+    border-radius: 100rem 0 0 100rem;
+}
+
+.navbar-item.active {
+    background-color: #EAEDFB;
+    position: relative;
+}
+
+.navbar-item.active::before,
+.navbar-item.active::after {
+    --border-radius: 1rem;
+
+    content: '';
+    position: absolute;
+    width: var(--border-radius);
+    height: var(--border-radius);
+    right: 0;
+    background-color: #7099ff;
+}
+
+.navbar-item.active::before {
+    top: calc(var(--border-radius) * -1);
+    box-shadow: 5px 5px 0 5px #EAEDFB;
+    border-radius: 0 0 100rem 0;
+}
+
+.navbar-item.active::after {
+    bottom: calc(var(--border-radius) * -1);
+    border-radius: 0 100rem 0 0;
+    box-shadow: 5px -5px 0 5px #EAEDFB;
+}
+
+.navbar-item.active .navbar-link {
+    color: #4062c0;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+}

@@ -1,7 +1,7 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
+import { Albert_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const albert_sans = Albert_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Microdesafio 1',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={albert_sans.className}>{children}</body>
     </html>
   )
 }

@@ -1,0 +1,16 @@
+.btn {
+    background-color: #7099FF;
+    box-shadow: 0px 0px 10px #abc4ff;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3s;
+    font-family: '__Asap_8f4f49', '__Asap_Fallback_8f4f49';
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #1B3A89;
+    transition: 0.3s;
+}

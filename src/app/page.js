@@ -1,14 +1,13 @@
-// import styles from './page.module.css'
+// components
 import { Counter } from './Components/Counter/Counter'
 import { Hero } from './Components/Hero/Hero'
 import { Navbar } from './Components/NavBar/Navbar'
 
-export default function Home() {
+export default function MyApp() {
   return (
-    <main>
+    <main className='main'>
       <Navbar />
       <Hero />
-      <Counter />
     </main>
   )
 }
