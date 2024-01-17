@@ -1,13 +1,23 @@
 /* color: #fff; */
 /* color: #001D66; */
 
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background-color: #7099ff;
+    box-shadow: 0 0 5px 2px #abc4ff;
+}
+
 nav {
     /* FIX POSITION STICKY LATER */
-    max-height: 100vh;
+    min-height: 100vh;
     position: sticky;
     top: 0;
     background-color: #7099ff;
-    /* box-shadow: 0px 2px 4px #abc4ff; */
 }
 
 .navbar-list {
