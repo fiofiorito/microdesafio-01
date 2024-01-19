@@ -33,17 +33,18 @@ nav {
     padding: 0.5rem 2rem;
     margin-left: 2rem;
     border-radius: 100rem 0 0 100rem;
+    transition: 0.2s;
 }
 
 .navbar-item.active {
     background-color: #EAEDFB;
     position: relative;
+    transition: 0.2s;
 }
 
 .navbar-item.active::before,
 .navbar-item.active::after {
     --border-radius: 1rem;
-
     content: '';
     position: absolute;
     width: var(--border-radius);
@@ -56,19 +57,23 @@ nav {
     top: calc(var(--border-radius) * -1);
     box-shadow: 5px 5px 0 5px #EAEDFB;
     border-radius: 0 0 100rem 0;
+    transition: 0.2s;
 }
 
 .navbar-item.active::after {
     bottom: calc(var(--border-radius) * -1);
     border-radius: 0 100rem 0 0;
     box-shadow: 5px -5px 0 5px #EAEDFB;
+    transition: 0.2s;
 }
 
 .navbar-item.active .navbar-link {
     color: #4062c0;
+    transition: 0.2s;
 }
 
 .navbar-link {
     text-decoration: none;
     color: #fff;
+    transition: 0.2s;
 }
