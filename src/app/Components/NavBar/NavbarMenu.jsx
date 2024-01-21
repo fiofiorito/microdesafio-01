@@ -23,34 +23,40 @@ export function NavbarMenu() {
             href: "contacto"
         }
     ];
-
     const pathname = usePathname();
 
-    // AGREGAR CAMBIO DE ACTIVE CLASS
-    // CREO Q ES UN ACERCAMIENTO PERO COMO TODAVIA NO ESTAN LAS RUTAS ME CONFUNDE UN POCO, ACTUALIZAREMOS
-    // CAMBIO DE OPINION SE VA A ABRIR Y CERRAR EN TODOS DISPOSITIVOS COMO SI FUESE MOBILE
-    const [active, setActive] = useState("navbar-item active");
+    const [hamburgerLine, setHamburgerLine] = useState("line unclicked");
+    const [navbar, setNavbar] = useState("navbar hidden");
     const [isMenuClicked, setIsMenuClicked] = useState(false);
 
     const handleMenu = () => {
         if (!isMenuClicked) {
-            setActive("navbar-item active")
+            setHamburgerLine("line clicked");
+            setNavbar("navbar visible")
         } else {
-            setActive("navbar-item")
+            setHamburgerLine("line unclicked");
+            setNavbar("navbar hidden");
         }
         setIsMenuClicked(!isMenuClicked);
     }
 
 
-    return <nav>
-        <ul className="navbar-list">
-            {/* NO FUNCIONA EL ESTILO TODAVIA */}
-            {
-                links.map(link => {
-                    return <li onClick={handleMenu} className={`${pathname === link.href ? active : ''} navbar-item`}><Link className='navbar-link' href={link.href}>{link.label}</Link></li>
-                })
-            }
-        </ul>
-    </nav>
+    return <div className='navbar-container'>
+        <div className='hamburger' onClick={handleMenu}>
+            <div className={hamburgerLine}></div>
+            <div className={hamburgerLine}></div>
+            <div className={hamburgerLine}></div>
+        </div>
+        <nav className={navbar}>
+            <ul className="navbar-list">
+                {
+                    links.map(link => {
+                        return <li onClick={handleMenu} className='navbar-item'><Link className='navbar-link' href={link.href}>{link.label}</Link></li>
+                    })
+                }
+            </ul>
+        </nav>
+    </div>
+
 
 }

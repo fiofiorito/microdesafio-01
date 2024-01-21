@@ -14,7 +14,8 @@ export default function MyApp() {
 
 /* TO DO
 - terminar de configurar la pagina NOT FOUND
-- solucionar el active class de Navbar
+- Armar slideFromLeft animation para la navbar
 - chequear q todas los Link sean Link y no a
 - armar lista de productos en carpeta data > products.js
+- AGREGAR CONTAINER DE 90% WIDTH
 */
