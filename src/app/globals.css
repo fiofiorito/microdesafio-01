@@ -24,6 +24,10 @@ a {
   animation: slideUp 0.5s ease-out;
 }
 
+.slide-from-left {
+  animation: slideFromLeft 0.5s ease-out forwards;
+}
+
 
 /* keyframes */
 @keyframes slideUp {
@@ -34,6 +38,18 @@ a {
 
   to {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
     opacity: 1;
   }
 }

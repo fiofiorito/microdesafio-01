@@ -32,7 +32,7 @@ export function NavbarMenu() {
     const handleMenu = () => {
         if (!isMenuClicked) {
             setHamburgerLine("line clicked");
-            setNavbar("navbar visible")
+            setNavbar("navbar visible slide-from-left")
         } else {
             setHamburgerLine("line unclicked");
             setNavbar("navbar hidden");

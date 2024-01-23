@@ -1,0 +1,11 @@
+.product-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.product-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+}

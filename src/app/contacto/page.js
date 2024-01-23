@@ -2,7 +2,6 @@ import { Navbar } from "../Components/NavBar/Navbar";
 
 const Contacto = () => {
     return <main className="main">
-        <Navbar />
         <div className="slide-up">
             <h2>Contactate con nosotros!</h2>
             <p><span>Email:</span>example@email.com</p>

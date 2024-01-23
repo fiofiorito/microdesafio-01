@@ -5,7 +5,6 @@ import { Navbar } from './Components/NavBar/Navbar'
 export default function MyApp() {
   return (
     <main className='main'>
-      <Navbar />
       <Hero />
     </main>
   )
@@ -13,9 +12,9 @@ export default function MyApp() {
 
 
 /* TO DO
-- terminar de configurar la pagina NOT FOUND
-- Armar slideFromLeft animation para la navbar
 - chequear q todas los Link sean Link y no a
-- armar lista de productos en carpeta data > products.js
+- Darle estilos al product Card
+- Design home page!!!!
+- Solucionar la freaking barra de navegacion!!!!!! 
 - AGREGAR CONTAINER DE 90% WIDTH
 */

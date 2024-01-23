@@ -9,7 +9,7 @@ export function Hero() {
             <Button btnText="Lorem Ipsum" />
         </div>
         <div>
-            <Image src={"https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/11/estas-son-marcas-electrodomesticos-fiables-ocu-2872363.jpg"} width={200} height={125} />
+            <Image src='/electric-appliance.png' width={200} height={200} />
         </div>
     </section>
 }
