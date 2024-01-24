@@ -7,18 +7,22 @@ import { usePathname } from 'next/navigation';
 export function NavbarMenu() {
     const links = [
         {
+            key: 1,
             label: "Inicio",
             href: "/"
         },
         {
+            key: 2,
             label: "Nosotros",
             href: "nosotros"
         },
         {
+            key: 3,
             label: "Productos",
             href: "productos"
         },
         {
+            key: 4,
             label: "Contacto",
             href: "contacto"
         }
@@ -51,7 +55,7 @@ export function NavbarMenu() {
             <ul className="navbar-list">
                 {
                     links.map(link => {
-                        return <li onClick={handleMenu} className='navbar-item'><Link className='navbar-link' href={link.href}>{link.label}</Link></li>
+                        return <li key={link.key} onClick={handleMenu} className='navbar-item'><Link className='navbar-link' href={link.href}>{link.label}</Link></li>
                     })
                 }
             </ul>

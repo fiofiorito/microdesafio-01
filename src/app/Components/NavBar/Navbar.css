@@ -14,73 +14,25 @@
 }
 
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    padding: 1.25rem 0.75rem;
-}
-
-.hamburger .line {
-    width: 1.5em;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 20px;
-    margin: 4px 0.7rem;
-}
-
-.navbar {
-    position: absolute;
-    top: 5em;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 0em;
-    background-color: #ECF2FC;
-    transition: 0.5s;
-    overflow: hidden;
-    z-index: 999;
-}
-
-.navbar.visible {
-    height: fit-content;
-    width: 100vw;
-    margin: 0 auto;
+    display: none;
 }
 
 .navbar-list {
-    display: block;
-    width: fit-content;
-    margin: 2em 0 2.5em 1rem;
-    text-align: left;
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.navbar.visible .navbar-list {
-    opacity: 1;
-    display: grid;
-    gap: 0.75rem;
-}
-
-.navbar-link {
-    margin-bottom: 0.5em;
-    padding: 0.6em 0.9em;
-    color: #fff;
-}
-
-.hidden {
-    display: hidden;
-}
-
-.visible {
-    display: inherit;
-    background-color: #7099ff;
-    box-shadow: 0 3px 1px -6px #a0bafb;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem;
 }
 
 .navbar-item {
     list-style: none;
     border-radius: 20px;
     padding: 0.5rem 1rem;
+}
+
+.navbar-link {
+    color: #fff;
 }
 
 .navbar-item.active,
@@ -97,24 +49,68 @@
     transition: 0.3s;
 }
 
-@media (min-width: 700px) {
-    .navbar.visible .navbar-list {
-        opacity: 1;
+@media (max-width: 900px) {
+    .hamburger {
         display: flex;
-        flex-direction: row;
-        gap: 0.75rem;
+        flex-direction: column;
+        padding: 1.25rem 0.75rem;
+    }
+
+    .hamburger .line {
+        width: 1.5em;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 4px 0.7rem;
     }
 
     .navbar {
-        top: 0;
-        left: 3.5rem;
+        position: absolute;
+        top: 5em;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0em;
+        background-color: #ECF2FC;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 999;
     }
 
     .navbar.visible {
-        height: 5rem;
+        height: fit-content;
+        width: 100vw;
+        margin: 0 auto;
     }
 
     .navbar-list {
-        margin: 1.25rem 1rem;
+        display: block;
+        width: fit-content;
+        margin: 2em 0 2.5em 1rem;
+        text-align: left;
+        transition: 0.5s;
+        opacity: 0;
+        padding: 0;
+    }
+
+    .navbar.visible .navbar-list {
+        opacity: 1;
+        display: grid;
+        gap: 0.75rem;
+    }
+
+    .navbar-link {
+        margin-bottom: 0.5em;
+        padding: 0.6em 0.9em;
+    }
+
+    .hidden {
+        display: hidden;
+    }
+
+    .visible {
+        display: inherit;
+        background-color: #7099ff;
+        box-shadow: 0 3px 1px -6px #a0bafb;
     }
 }
