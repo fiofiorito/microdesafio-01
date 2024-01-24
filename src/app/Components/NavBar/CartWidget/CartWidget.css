@@ -1,0 +1,14 @@
+.cart-widget {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.cart-widget span {
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .cart-widget {
+        padding-left: 1.9rem;
+    }
+}

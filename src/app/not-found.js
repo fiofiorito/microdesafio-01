@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "./Components/Button/Button";
+import Button from "./Components/Button/Button";
 import './not-found.css';
 import Image from "next/image";
 

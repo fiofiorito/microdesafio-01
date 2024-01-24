@@ -3,8 +3,9 @@ import { useState } from 'react';
 import './Navbar.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import CartWidget from './CartWidget/CartWidget';
 
-export function NavbarMenu() {
+export default function NavbarMenu() {
     const links = [
         {
             key: 1,
@@ -58,6 +59,7 @@ export function NavbarMenu() {
                         return <li key={link.key} onClick={handleMenu} className='navbar-item'><Link className='navbar-link' href={link.href}>{link.label}</Link></li>
                     })
                 }
+                <Link href='cart'><CartWidget /></Link>
             </ul>
         </nav>
     </div>

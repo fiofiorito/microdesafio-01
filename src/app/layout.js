@@ -1,5 +1,5 @@
 import Footer from './Components/Footer/Footer'
-import { Navbar } from './Components/NavBar/Navbar'
+import Navbar from './Components/NavBar/Navbar'
 import './globals.css'
 import { Albert_Sans } from 'next/font/google'
 

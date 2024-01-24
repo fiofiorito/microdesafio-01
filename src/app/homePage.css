@@ -1,0 +1,54 @@
+/* colors 
+- titles: #1A3A8A
+- button: #7099FF
+- button:hover: #1A3A8A
+- background: #ECF2FC
+- background contrast: #7099FF
+- font: #FFF
+- font:hover: #4062C0
+*/
+
+section {
+    padding: 3rem 0;
+}
+
+.section-line {
+    height: 1px;
+    background-color: #7099FF;
+    opacity: 0.3;
+    width: 50%;
+}
+
+.home-title {
+    color: #1A3A8A;
+    margin: 0 0 1.5rem;
+}
+
+.home-text {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
+.img-div {
+    padding: 1rem 0;
+}
+
+@media (min-width: 700px) {
+    .paragraph {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+
+    }
+
+    .img-div {
+        padding: 0;
+    }
+
+    .paragraph.reverse {
+        flex-direction: row-reverse;
+        padding-top: 2rem;
+    }
+}
