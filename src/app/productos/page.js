@@ -1,6 +1,7 @@
 import { MockProducts } from "@/data/products";
-import { Navbar } from "../Components/NavBar/Navbar";
 import './Productos.css';
+import { Hero } from "../Components/Hero/Hero";
+import ProductCard from "../Components/ProductCard/ProductCard";
 
 export const metadata = {
     title: 'Productos',
@@ -8,24 +9,52 @@ export const metadata = {
 }
 
 const Productos = () => {
+    const heroData = {
+        title: 'Los mejores electrodomésticos del mercado',
+        text: 'La misma calidad de siempre, ahora también en el mundo digital',
+        img: '/electric-appliance.png',
+        alt: 'lavarropas, radio, heladera y microhondas'
+    }
+
     const products = MockProducts;
+
+    // const categories = Array.from(new Set(products.map(product => {
+    //     product.category
+    // })));
+
     return <main className='main'>
         <section className="container">
-            <h1>Esto es productos</h1>
+            <Hero title={heroData.title} text={heroData.text} img={heroData.img} alt={heroData.alt} />
+
+            <div className='section-line container' />
+
+            {/* NO FUNCIONA SOLUCIONAR PARA PODER RENDERIZAR CADA CATEGORIA, NO APARECE EN LA PAG 
+            <div>
+                {
+                    categories.map((category, index) => {
+                        return <div key={index}>
+                            <Link href={`/productos/${encodeURIComponent(category)}`}>{category}</Link>
+                        </div>
+                    })
+                }
+            </div> */}
+
             <div className="product-cont">
                 {
                     products.map(product => {
-                        return <div key={product.id} className="product-card">
-                            <h3>{product.titulo}</h3>
-                            <p>{product.descripcion}</p>
-                            <h4>${product.precio} ARS</h4>
-                        </div>
+                        return <ProductCard
+                            id={product.id}
+                            img={product.image}
+                            name={product.titulo}
+                            desc={product.descripcion}
+                            price={product.precio}
+                            link={product.category}
+                            linkTxt='Ver mas en esta categoria'
+                        />
                     })
                 }
             </div>
         </section>
-
-
     </main>
 }
 

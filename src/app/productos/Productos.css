@@ -1,11 +1,18 @@
 .product-cont {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
 }
 
-.product-card {
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 1px solid #000;
+@media (min-width: 700px) {
+    .product-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .product-cont {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

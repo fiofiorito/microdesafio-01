@@ -1,0 +1,45 @@
+section.container {
+    padding: 3rem 0;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.title-h2 {
+    color: #1A3A89;
+}
+
+.title-link {
+    transition: 0.3s;
+    color: #B1C6FB;
+    text-decoration: underline;
+}
+
+.title-link:hover,
+.title-link:focus {
+    color: #102456;
+    transition: 0.3s;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+@media (min-width: 700px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

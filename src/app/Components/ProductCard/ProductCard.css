@@ -1,0 +1,25 @@
+.product-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #E6EEFD;
+    box-shadow: 0 2px 8px 2px #d0ddff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #102456;
+}
+
+.prod-name {
+    margin: 1rem 0;
+}
+
+.prod-desc {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.prod-price {
+    color: #1A3A89;
+    font-size: 1.125rem;
+}

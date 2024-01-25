@@ -14,16 +14,11 @@ export default function NavbarMenu() {
         },
         {
             key: 2,
-            label: "Nosotros",
-            href: "nosotros"
-        },
-        {
-            key: 3,
             label: "Productos",
             href: "productos"
         },
         {
-            key: 4,
+            key: 3,
             label: "Contacto",
             href: "contacto"
         }

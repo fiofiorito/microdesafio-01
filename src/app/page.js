@@ -3,9 +3,16 @@ import { Hero } from './Components/Hero/Hero'
 import './homePage.css'
 
 export default function MyApp() {
+  const heroData = {
+    title: 'Electrodomesticos Capellari',
+    text: 'Innovación en cada rincón del hogar, una tradición que perdura en el tiempo.',
+    img: '/electric-appliance.png',
+    alt: 'lavarropas, radio, heladera y microhondas'
+  }
+
   return (
     <main className='main'>
-      <Hero id='historia' />
+      <Hero title={heroData.title} text={heroData.text} img={heroData.img} alt={heroData.alt} />
 
       <div className='section-line container' />
 
@@ -28,9 +35,6 @@ export default function MyApp() {
 
 
 /* TO DO
-- chequear q todas los Link sean Link y no a
-- Darle estilos al product Card
-- pagina catalogo/productos
 - pagina producto con counter
 - rutas dinamicas
 */
