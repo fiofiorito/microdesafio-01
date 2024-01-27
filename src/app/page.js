@@ -35,7 +35,5 @@ export default function MyApp() {
 
 
 /* TO DO
-- pagina producto con counter
-- rutas dinamicas
 - q el footer sea mas lindo e incluya redes sociales
 */

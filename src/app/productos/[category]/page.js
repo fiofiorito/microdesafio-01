@@ -22,7 +22,7 @@ const Category = ({ params }) => {
                                     img={product.image}
                                     name={product.titulo}
                                     desc={product.descripcion}
-                                    price={product.precio}
+                                    price={`$ ${product.precio} ARS`}
                                 />
                             </Link>
                         </div>

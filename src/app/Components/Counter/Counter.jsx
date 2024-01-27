@@ -16,8 +16,8 @@ export function Counter() {
         setCount(count + 1);
     }
     return <div className='counter-grid'>
-        <button className='counter-btn' onClick={handleSub}>-</button>
-        <p>{count}</p>
-        <button className='counter-btn' onClick={handleAdd}>+</button>
+        <button className='counter-btn no-border-left' onClick={handleSub}>-</button>
+        <p className='counter-num'>{count}</p>
+        <button className='counter-btn no-border-right' onClick={handleAdd}>+</button>
     </div>
 }

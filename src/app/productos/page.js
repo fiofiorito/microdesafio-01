@@ -2,7 +2,6 @@ import { MockProducts } from "@/data/products";
 import './Productos.css';
 import { Hero } from "../Components/Hero/Hero";
 import ProductCard from "../Components/ProductCard/ProductCard";
-import Link from "next/link";
 
 export const metadata = {
     title: 'Productos',
@@ -32,8 +31,6 @@ const Productos = () => {
                             id={product.id}
                             img={product.image}
                             name={product.titulo}
-                            desc={product.descripcion}
-                            price={product.precio}
                             link={product.category}
                             linkTxt='Ver mas en esta categoria'
                         />
