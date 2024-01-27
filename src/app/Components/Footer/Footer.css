@@ -4,6 +4,22 @@ footer {
     text-align: center;
     background-color: #7099FF;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials-link {
+    font-size: 1.5rem;
 }
 
 .footer-p {
