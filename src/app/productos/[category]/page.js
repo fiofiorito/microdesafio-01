@@ -15,13 +15,17 @@ const Category = ({ params }) => {
             {
                 products.map(product => {
                     if (product.category === params.category) {
-                        return <ProductCard
-                            id={product.id}
-                            img={product.image}
-                            name={product.titulo}
-                            desc={product.descripcion}
-                            price={product.precio}
-                        />
+                        return <div>
+                            <Link href={`/productos/${product.category}/${encodeURIComponent(product.id)}`}>
+                                <ProductCard
+                                    id={product.id}
+                                    img={product.image}
+                                    name={product.titulo}
+                                    desc={product.descripcion}
+                                    price={product.precio}
+                                />
+                            </Link>
+                        </div>
                     }
                 })
             }

@@ -82,6 +82,7 @@
         height: fit-content;
         width: 100vw;
         margin: 0 auto;
+        animation: slideFromLeft 0.5s ease-out forwards;
     }
 
     .navbar-list {
@@ -107,11 +108,25 @@
 
     .hidden {
         display: hidden;
+        transition: 0.3s;
     }
 
     .visible {
         display: inherit;
         background-color: #7099ff;
         box-shadow: 0 3px 1px -6px #a0bafb;
+    }
+}
+
+/* keyframes */
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }

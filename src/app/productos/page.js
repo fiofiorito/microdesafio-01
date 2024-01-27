@@ -2,6 +2,7 @@ import { MockProducts } from "@/data/products";
 import './Productos.css';
 import { Hero } from "../Components/Hero/Hero";
 import ProductCard from "../Components/ProductCard/ProductCard";
+import Link from "next/link";
 
 export const metadata = {
     title: 'Productos',
@@ -18,26 +19,11 @@ const Productos = () => {
 
     const products = MockProducts;
 
-    // const categories = Array.from(new Set(products.map(product => {
-    //     product.category
-    // })));
-
     return <main className='main'>
         <section className="container">
             <Hero title={heroData.title} text={heroData.text} img={heroData.img} alt={heroData.alt} />
 
             <div className='section-line container' />
-
-            {/* NO FUNCIONA SOLUCIONAR PARA PODER RENDERIZAR CADA CATEGORIA, NO APARECE EN LA PAG 
-            <div>
-                {
-                    categories.map((category, index) => {
-                        return <div key={index}>
-                            <Link href={`/productos/${encodeURIComponent(category)}`}>{category}</Link>
-                        </div>
-                    })
-                }
-            </div> */}
 
             <div className="product-cont">
                 {

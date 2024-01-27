@@ -26,14 +26,6 @@ a {
   animation: slideUp 0.5s ease-out;
 }
 
-.slide-from-left {
-  animation: slideFromLeft 0.5s ease-out forwards;
-}
-
-.slide-from-right {
-  animation: slideFromRight 0.5s ease-in forwards;
-}
-
 /* keyframes */
 @keyframes slideUp {
   from {
@@ -44,29 +36,5 @@ a {
   to {
     transform: translateY(0px);
     opacity: 1;
-  }
-}
-
-@keyframes slideFromLeft {
-  from {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes slideFromRight {
-  from {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-
-  to {
-    transform: translateX(-200px);
-    opacity: 0;
   }
 }
