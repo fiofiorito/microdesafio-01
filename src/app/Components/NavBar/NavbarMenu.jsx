@@ -4,6 +4,7 @@ import './Navbar.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import CartWidget from './CartWidget/CartWidget';
+import UserIcon from './UserIcon/UserIcon';
 
 export default function NavbarMenu() {
     const links = [
@@ -55,6 +56,7 @@ export default function NavbarMenu() {
                     })
                 }
                 <Link href='cart'><CartWidget /></Link>
+                <Link href='admin'><UserIcon /></Link>
             </ul>
         </nav>
     </div>

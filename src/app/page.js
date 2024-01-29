@@ -32,8 +32,3 @@ export default function MyApp() {
     </main>
   )
 }
-
-
-/* TO DO
-- q el footer sea mas lindo e incluya redes sociales
-*/
